@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import AsyncSelect from 'react-select/async';
 import { fectchLocalMapBox } from '../api';
-import { OrderLocationdata } from './types';
+import { OrderLocationData } from './types';
 
 const initialPosition = {
     lat: -4.9111375,
@@ -22,7 +22,7 @@ type Place = {
 }
 
 type Props = {
-    onChangeLocation: (Location: OrderLocationdata) => void;
+    onChangeLocation: (Location: OrderLocationData) => void;
 }
 
 
@@ -59,7 +59,7 @@ function OrderLocation({ onChangeLocation }: Props) {
       };
 
     return (
-        <div className="orders-location-container">
+        <div className="order-location-container">
             <div className="order-location-content">
                 <h3 className="order-location-title">
                     Selecione onde o pedido deve ser entregue:

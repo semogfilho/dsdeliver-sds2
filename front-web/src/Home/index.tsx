@@ -20,7 +20,7 @@ function Home() {
                     </h3>
                         <Link to="/orders" href="orders" className="home-btn-order">
                             FAZER PEDIDO
-                    </Link>
+                        </Link>
                     </div>
                     <div className="home-image">
                         <MainImage />
